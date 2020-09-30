@@ -63,7 +63,7 @@ export class ListComponent implements OnInit  {
       );
     }
 
-    deleteAnimal(id) {
+    deleteTeam(id) {
         $('#myModal-' + id).modal('hide');
         this._teamService.delete_team(this.token, id).subscribe(
             response => {
