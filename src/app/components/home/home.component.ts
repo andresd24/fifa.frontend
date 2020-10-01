@@ -1,16 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { fadeIn } from '../animation';
 
 @Component({
-  selector: 'home',
+  selector: 'app-home',
   templateUrl: './home.component.html',
   animations: [ fadeIn ]
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent  {
   title = 'Home';
-
-  ngOnInit() {
-    console.log("HomeComponent OnInit");
-  }
 }

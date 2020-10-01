@@ -25,12 +25,12 @@
                     </a>
                 </li>
                 <li>
-                    <a [routerLink]="['/tienda']" [routerLinkActive]="['active']">
+                    <a [routerLink]="['/store']" [routerLinkActive]="['active']">
                         <span class="glyphicon glyphicon-gift"></span> Store
                     </a>
                 </li>
                 <li>
-                    <a [routerLink]="['/contacto']" [routerLinkActive]="['active']">
+                    <a [routerLink]="['/contact']" [routerLinkActive]="['active']">
                         <span class="glyphicon glyphicon-comment"></span> Contact
                     </a>
                 </li>
@@ -38,8 +38,8 @@
 
             <ul class="nav navbar-nav navbar-right" *ngIf="!identity">
                 <li>
-                    <a [routerLink]="['/registro']" [routerLinkActive]="['active']">
-                        <span class="glyphicon glyphicon-user"></span> Registro
+                    <a [routerLink]="['/signup']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-user"></span> Register
                     </a>
                 </li>
                 <li>
@@ -62,12 +62,12 @@
                     <ul class="dropdown-menu">
                         <li *ngIf="identity && identity.role == 'ROLE_ADMIN'">
                             <a [routerLink]="['/admin-panel']">
-                                <span class="glyphicon glyphicon-tasks"></span> Administración
+                                <span class="glyphicon glyphicon-tasks"></span> Administration
                             </a>
                         </li>
                         <li>
-                            <a [routerLink]="['/mis-datos']">
-                                <span class="glyphicon glyphicon-cog"></span> Mis Datos
+                            <a [routerLink]="['/profile']">
+                                <span class="glyphicon glyphicon-cog"></span> Profile
                             </a>
                         </li>
                         <li>

@@ -19,7 +19,7 @@ export class AppComponent implements OnInit, DoCheck  {
       private _router: Router,
       private _userService: UserService
     ){
-      this.title = 'Bet Friendly :)';
+      this.title = 'Fifa 2020 Web Application';
       this.url = GLOBAL.url;
     }
 

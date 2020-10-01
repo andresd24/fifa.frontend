@@ -11,7 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Components
 import { AppComponent } from './app.component';
-import { TiendaComponent } from './components/tienda/tienda.component';
+import { StoreComponent } from './components/store/store.component';
 import { ParquesComponent } from './components/parques/parques.component';
 import { TeamsComponent } from './components/teams/teams.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -30,7 +30,7 @@ import { UserService } from './services/user.service';
 @NgModule({
   declarations: [
     AppComponent,
-    TiendaComponent,
+    StoreComponent,
     ParquesComponent,
     TeamsComponent,
     ContactComponent,

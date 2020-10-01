@@ -1,7 +1,7 @@
 import { ModuleWithProviders} from '@angular/core';
 import { Routes, RouterModule} from '@angular/router'
 
-import { TiendaComponent } from './components/tienda/tienda.component';
+import { StoreComponent } from './components/store/store.component';
 import { TeamsComponent } from './components/teams/teams.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { KeepersComponent } from './components/keepers/keepers.component';
@@ -19,10 +19,10 @@ const appRoutes: Routes = [
     {path: 'contact', component: ContactComponent},
     {path: 'cuidadores', component: KeepersComponent},
     {path: 'home', component: HomeComponent},
-    {path: 'tienda', component: TiendaComponent},
-    {path: 'registro', component: RegisterComponent},
+    {path: 'store', component: StoreComponent},
+    {path: 'signup', component: RegisterComponent},
     {path: 'login', component: LoginComponent},
-    {path: 'mis-datos', component: UserEditComponent},
+    {path: 'profile', component: UserEditComponent},
     {path: 'team/:id', component: TeamDetailComponent},
     {path: '**', component: HomeComponent}
      
