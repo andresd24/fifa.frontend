@@ -1,5 +1,5 @@
 import { ModuleWithProviders} from '@angular/core';
-import { Routes, RouterModule} from '@angular/router'
+import { Routes, RouterModule} from '@angular/router';
 
 import { StoreComponent } from './components/store/store.component';
 import { TeamsComponent } from './components/teams/teams.component';
@@ -25,7 +25,6 @@ const appRoutes: Routes = [
     {path: 'profile', component: UserEditComponent},
     {path: 'team/:id', component: TeamDetailComponent},
     {path: '**', component: HomeComponent}
-     
 ];
 
 export const appRoutingProviders: any[] = [];

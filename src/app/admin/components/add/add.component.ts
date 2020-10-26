@@ -29,9 +29,8 @@ export class AddComponent {
       private _teamService: TeamService,
       private _userService: UserService,
       private _uploadService: UploadService
-    )
-    {
-        this.title = 'Add';
+    ) {
+        this.title = 'Add Team';
         this.team = new Team('', '', '', '', 2018, '', '');
         this.identity = this._userService.get_identity();
         this.token = this._userService.get_token();
