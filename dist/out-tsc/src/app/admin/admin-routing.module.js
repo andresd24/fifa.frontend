@@ -6,15 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MainComponent } from './components/teams/teams.component';
+import { TeamsAdminComponent } from './components/teams/teams-admin.component';
 import { ListComponent } from './components/list/list.component';
 import { AddComponent } from './components/add/add.component';
 import { EditComponent } from './components/edit/edit.component';
 import { AdminGuard } from '../services/admin.guard';
 var adminRoutes = [
     {
-        path: 'admin-panel',
-        component: MainComponent,
+        path: 'admin-teams',
+        component: TeamsAdminComponent,
         canActivate: [AdminGuard],
         children: [
             { path: '', redirectTo: 'listado', pathMatch: 'full' },

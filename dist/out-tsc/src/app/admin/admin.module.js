@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AdminRoutingModule } from './admin-routing.module';
+import { TeamsAdminComponent } from './components/teams/teams-admin.component';
 import { ListComponent } from './components/list/list.component';
 import { AddComponent } from './components/add/add.component';
 import { EditComponent } from './components/edit/edit.component';
@@ -19,7 +20,7 @@ var AdminModule = /** @class */ (function () {
     AdminModule = __decorate([
         NgModule({
             declarations: [
-                MainComponent,
+                TeamsAdminComponent,
                 ListComponent,
                 AddComponent,
                 EditComponent,
