@@ -27,7 +27,7 @@ export class ListComponent implements OnInit  {
       private _teamService: TeamService,
       private _userService: UserService
     ){
-        this.title = 'Listado de Animales';
+        this.title = 'Teams Listings';
     }
 
     ngOnInit() {
