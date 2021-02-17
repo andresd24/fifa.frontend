@@ -5,28 +5,27 @@
     <div class="alert alert-success" *ngIf="status == 'success'">
         Login correcto
     </div>
-    
+
     <div class="alert alert-danger" *ngIf="status == 'error'">
-        No te has identificado correctamente
+        You haven't identified correctly
     </div>
 
     <form #loginForm="ngForm" (ngSubmit)="onSubmit()" class="col-lg-7">
         <p>
             <label>Email:</label>
             <input type="email" name="email" #email="ngModel" [(ngModel)]="user.email" class="form-control" required />
-        </p>    
+        </p>
         <span *ngIf="!email.valid && email.touched">
             El email es obligatorio
         </span>
         <p>
-        <label>Password:</label>
-            <input type="password" name="password" #password="ngModel" [(ngModel)]="user.password"class="form-control" required />
-        <span *ngIf="!password.valid && password.touched">
+            <label>Password:</label>
+            <input type="password" name="password" #password="ngModel" [(ngModel)]="user.password" class="form-control" required />
+            <span *ngIf="!password.valid && password.touched">
             El password es obligatorio
         </span>
-        </p>   
-       <input type="submit" value="Log In" class="btn btn-success" />
+        </p>
+        <input type="submit" value="Log In" class="btn btn-success" />
     </form>
 
 </div>
-
