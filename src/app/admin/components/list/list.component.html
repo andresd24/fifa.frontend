@@ -2,12 +2,12 @@
     <h3>{{title}}</h3>
 
     <div class="row">
-        <div class="col-lg-1">Buscar:</div>
+        <div class="col-lg-1">Search:</div>
         <div class="col-lg-3">
             <input type="text" [(ngModel)]="searchTerm" />
         </div>
         <div class="label label-success" *ngIf="searchTerm">
-            Termino de busqueda: <strong>{{searchTerm}}</strong>
+            Search term: <strong>{{searchTerm}}</strong>
         </div>
     </div>
 
@@ -26,13 +26,13 @@
                 <td class="btn-toolbar">
 
                     <a [routerLink]="['/team', team._id]" class="btn btn-sm btn-success">
-                        <span class="glyphicon glyphicon-eye-open" area-hidden="true"></span> Ver
+                        <span class="glyphicon glyphicon-eye-open" area-hidden="true"></span> Details
                     </a>
                     <a [routerLink]="['/admin-panel/editar', team._id]" class="btn btn-sm btn-primary">
-                        <span class="glyphicon glyphicon-pencil" area-hidden="true"></span> Editar
+                        <span class="glyphicon glyphicon-pencil" area-hidden="true"></span> Edit
                     </a>
                     <a href="#myModal-{{team._id}}" role="button" data-toggle="modal" class="btn btn-sm btn-danger">
-                        <span class="glyphicon glyphicon-trash" area-hidden="true"></span> Borrar
+                        <span class="glyphicon glyphicon-trash" area-hidden="true"></span> Delete
                     </a>
 
                     <div id="myModal-{{team._id}}" class="modal fade">
@@ -48,8 +48,8 @@
                                 </div>
                                 <div class="modal-footer">
 
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-danger" (click)="deleteTeam(team._id)">Borrar</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" (click)="deleteTeam(team._id)">Delete</button>
                                 </div>
                             </div>
                         </div>

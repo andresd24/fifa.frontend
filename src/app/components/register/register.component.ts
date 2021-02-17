@@ -74,6 +74,7 @@ export class RegisterComponent {
         if (this.validateSignUpInfo()) {
             this._userService.register(this.user).subscribe(
             response => {
+                console.log('here');
                 if (response.user._id) {
                     this.status = 'success';
                     this.user = new User('', '', '', '', '','ROLE_USER', '');
@@ -83,7 +84,7 @@ export class RegisterComponent {
                 }
             },
             error => {
-//                console.log(<any>error);
+                this.errorMessage = 'The email you entered has already been registered at the Zoo. Please follow password recovery link.';
                 this.status = 'error';
             }
           );
