@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-1">Search:</div>
         <div class="col-lg-3">
-            <input type="text" [(ngModel)]="searchTerm" />
+            <input id="searchbox" type="text" [(ngModel)]="searchTerm" />
         </div>
         <div class="label label-success" *ngIf="searchTerm">
             Search term: <strong>{{searchTerm}}</strong>
@@ -40,11 +40,11 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title">¿Estas Seguro?</h4>
+                                    <h4 class="modal-title">Are you sure?</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Seguro que quieres eliminar el animal <strong>{{team.name}}</strong>?</p>
-                                    <p class="text-warning"><small>Si borras este animal no pordrás recuperarlo.</small></p>
+                                    <p>Sure you want to delete the team: <strong>{{team.name}}</strong>?</p>
+                                    <p class="text-warning"><small>If you delete this team you won't be able to recover it.</small></p>
                                 </div>
                                 <div class="modal-footer">
 
